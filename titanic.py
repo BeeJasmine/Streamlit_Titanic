@@ -48,16 +48,16 @@ def main():
 
 
 
-    if st.sidebar.checkbox("voir le jeu de données complet"):      
-        st.write("le voici")
-        st.table(data)
+    #if st.sidebar.checkbox("voir le jeu de données complet"):      
+     #   st.write("le voici")
+      #  st.table(data)
 
     if st.sidebar.checkbox("voir le jeu de données traité"):
         st.write("le voici")
         st.table(data2)
 
     if st.sidebar.checkbox("distribution des données"):      
-        x = st.sidebar.selectbox('Attributs: ', ['Survived', 'Pclass', 'Name', 'Sex', 'Age', 'Embarked'])
+        x = st.sidebar.selectbox('Attributs: ', ['Survived', 'Pclass', 'Sex', 'Age', 'Embarked'])
         st.write("Histogramme:  ",x)
         if (x == 'Age'):
             fig1 = px.histogram(data, x=x, hover_data=data.columns, color=x, nbins=20)
