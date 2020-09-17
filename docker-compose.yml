@@ -7,4 +7,3 @@ services:
       - 8181:5000
     volumes:
       - .:/app
-      
