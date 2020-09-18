@@ -9,4 +9,6 @@ Cette application répond à cette question.
 
 -> ```cd Streamlit_Titanic```
 
+-> ```pip3 install -r requirements.txt```
+
 -> ```streamlit run titanic.py```
